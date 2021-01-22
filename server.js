@@ -20,7 +20,7 @@ const connection = mysql.createConnection({
 });
 connection.connect();
 
-app.get('/api/customers', (Req,res)=>{
+app.get('/api/customers', (req,res)=>{
     connection.query(
         "SELECT * FROM CUSTOMER",
         (err, rows, field)=>{
